@@ -2,10 +2,12 @@
 
 Vue Adapter for [OpenTUI](https://github.com/anomalyco/opentui).
 
-Adapted from the [Solid Adapter](https://github.com/anomalyco/solid-adapter).
+Adapted from the [Solid Adapter](https://github.com/anomalyco/opentui/tree/main/packages/solid).
 
 > WIP
 > This is a work in progress, some features may not work as expected.
+
+See the [OpenTUI Docs](https://github.com/anomalyco/opentui/blob/main/packages/core/docs/getting-started.md) for more details.
 
 ## Installation
 
@@ -21,7 +23,7 @@ bun install open-vui
 preload = ["open-vui/preload"]
 ```
 
-2. Create a Vue SFC using OpenTUI tags:
+2. Create an `App.vue` file with a Vue SFC using OpenTUI tags:
 
 ```vue
 <template>
@@ -69,6 +71,8 @@ await render(App);
 ### Components
 
 open-vui exposes Vue template elements that map to OpenTUI renderables:
+
+See the [OpenTUI Components](https://github.com/anomalyco/opentui/blob/main/packages/core/docs/getting-started.md) documentation for more details.
 
 - **Layout & Display:** `text`, `box`, `scrollbox`, `ascii_font`
 - **Input:** `input`, `textarea`, `select`, `tab_select`
