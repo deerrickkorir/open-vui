@@ -1,0 +1,43 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`open-vui (Vue custom renderer) renders simple text 1`] = `
+"Hello World         
+                    
+                    
+                    
+                    
+"
+`;
+
+exports[`open-vui (Vue custom renderer) updates reactively 1`] = `
+"Counter: 0          
+                    
+                    
+"
+`;
+
+exports[`open-vui (Vue custom renderer) updates reactively 2`] = `
+"Counter: 5          
+                    
+                    
+"
+`;
+
+exports[`open-vui (Vue custom renderer) ignores whitespace-only text nodes between elements 1`] = `
+"Hi                  
+Box                 
+                    
+                    
+                    
+                    
+                    
+                    
+"
+`;
+
+exports[`open-vui (Vue custom renderer) supports <script setup lang=ts> 1`] = `
+"Count: 42           
+                    
+                    
+"
+`;

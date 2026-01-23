@@ -1,0 +1,41 @@
+{
+  "name": "open-vui",
+  "version": "0.1.1",
+  "description": "Vue 3 custom renderer for OpenTUI",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattmaribojoc/open-vui.git",
+    "directory": "packages/open-vui"
+  },
+  "module": "index.ts",
+  "type": "module",
+  "main": "index.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "bun scripts/build.ts",
+    "test": "bun test"
+  },
+  "exports": {
+    ".": {
+      "types": "./index.ts",
+      "import": "./index.ts"
+    },
+    "./preload": {
+      "import": "./scripts/preload.ts"
+    },
+    "./bun-plugin": {
+      "import": "./scripts/vue-plugin.ts"
+    }
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^24.0.0",
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@opentui/core": "^0.1.74",
+    "@vue/compiler-sfc": "^3.4.0",
+    "@vue/runtime-core": "^3.4.0",
+    "vue": "^3.4.0"
+  }
+}

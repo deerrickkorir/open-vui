@@ -1,0 +1,61 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`open-vui (layout parity) renders multiline text with <br> 1`] = `
+"Line 1         
+Line 2         
+Line 3         
+               
+               
+"
+`;
+
+exports[`open-vui (layout parity) renders basic box layout 1`] = `
+"┌──────────────────┐     
+│Inside Box        │     
+│                  │     
+│                  │     
+└──────────────────┘     
+                         
+                         
+                         
+"
+`;
+
+exports[`open-vui (layout parity) renders nested boxes 1`] = `
+"┌─Parent Box─────────────────┐     
+│                            │     
+│                            │     
+│  ┌────────┐                │     
+│  │Nested  │                │     
+│  └────────┘                │     
+│               Sibling      │     
+│                            │     
+│                            │     
+└────────────────────────────┘     
+                                   
+                                   
+"
+`;
+
+exports[`open-vui (layout parity) supports conditional rendering updates 1`] = `
+"Always visible - Conditional t
+                              
+                              
+"
+`;
+
+exports[`open-vui (layout parity) supports conditional rendering updates 2`] = `
+"Always visible                
+                              
+                              
+"
+`;
+
+exports[`open-vui (layout parity) handles empty component 1`] = `
+"          
+          
+          
+          
+          
+"
+`;
